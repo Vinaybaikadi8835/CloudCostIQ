@@ -1,0 +1,22 @@
+code .
+```
+
+Click on `.gitignore` in VS Code and paste this:
+```
+venv/
+__pycache__/
+*.pyc
+.env
+*.egg-info/
+.DS_Store
+```
+
+---
+
+## Step 4 — Fill in .env
+
+Click on `.env` in VS Code and paste this:
+```
+DATABASE_URL=postgresql://postgres:password@localhost:5432/cloudcostiq
+SECRET_KEY=mysecretkey123
+DEBUG=True
