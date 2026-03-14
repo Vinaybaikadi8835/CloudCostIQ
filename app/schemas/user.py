@@ -1,7 +1,7 @@
 from pydantic import BaseModel, EmailStr
 
 class UserCreate(BaseModel):
-    email: EmailStr      # Pydantic validates this is a real email format
+    email: EmailStr
     password: str
 
 class UserResponse(BaseModel):
